@@ -1,22 +1,13 @@
 
 import Illustration from '../img/illustration-hero.svg';
 import CardText from './CardText';
+import '../styles/Card.css';
 
 const Card = ()=>{
     return(
-        <div style={{
-            backgroundColor: 'white',
-            borderRadius: '20px',
-            display: 'flex',
-            flexDirection: 'column',
-            width: '400px'
-          }}>
+        <div className='card'>
             <div>
-              <img src={Illustration} style={{
-                width: '400px',
-                borderTopRightRadius: '20px',
-                borderTopLeftRadius: '20px'
-              }}></img>
+              <img src={Illustration} className='image'></img>
             </div>
     
             <CardText/>
